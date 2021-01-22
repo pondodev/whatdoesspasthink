@@ -1,0 +1,75 @@
+:root {
+    --background-color: #222;
+    --text-color: #EEE;
+    --secondary-text-color: #888;
+    --hyperlink-color: #A3BECC;
+    --hyperlink-hover-color: #3D98CC;
+
+    font-size: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer > * {
+    margin: 0;
+}
+
+h1, h2 {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--secondary-text-color);
+}
+
+a {
+    color: var(--hyperlink-color);
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--hyperlink-hover-color);
+    transition: all 0.2s ease-in-out;
+}
+
+a:active {
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.review {
+    max-width: 60vw;
+    margin: auto;
+    display: none;
+}
+
+.review > * {
+    margin: 1rem 0;
+}
